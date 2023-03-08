@@ -1,0 +1,223 @@
+
+:root{
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    width: 250px;
+    color: white;
+    background: rgb(0 0 0 / 80%);
+    border: 1px solid;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #050505;
+    border: 1px solid #050505;
+    cursor: pointer;
+}
+/* Container Product */
+.container-product_title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px 0;
+    color: white;
+}
+.container-product_title::after{
+    content: 'What is this software ?';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(255 255 255);
+    padding: 5px;
+    background: #0d100d;
+    transform: translateX(-50%);
+}
+.container-product_title::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 350px;
+    left: 50%;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+/* Container Teams */
+.container-teams_title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px 0;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.container-teams_title::after{
+    content: "Who your teams ?";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(255 255 255);
+    padding: 5px;
+    background: rgb(13 16 13);
+    transform: translateX(-50%);
+}
+.container-teams_title::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 350px;
+    left: 50%;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+/* Container Services */
+.container-services_title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px 0;
+    color: white;
+    margin-bottom: 50px;
+}
+.container-services_title::after{
+    content: 'What i provide ?';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px;
+    background: #0d100d;
+    transform: translateX(-50%);
+}
+.container-services_title::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 350px;
+    left: 50%;
+    height: 3px;
+    background: #ffffff;
+    transform: translateX(-50%);
+}
+/* Container Teams */
+.container-teams_title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px 0;
+    color: #0d100d;
+    margin-bottom: 50px;
+}
+.container-teams_title::after{
+    content: "Who your teams ?";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #0d100d;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+.container-teams_title::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 350px;
+    left: 50%;
+    height: 3px;
+    background: #0d100d;
+    transform: translateX(-50%);
+}
+/* Container Introduction */
+.container-introduction{
+    padding: 10px;
+}
+.container-introduction_title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px 0;
+    color: black;
+    margin-bottom: 50px;
+}
+.container-introduction_title::after{
+    content: 'How many maps are there ?';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #050505;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.container-introduction_title::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 350px;
+    left: 50%;
+    height: 3px;
+    background: #050505;
+    transform: translateX(-50%);
+}
+/* Container Introduction */
+.container-contact{
+    padding: 10px;
+}
+.container-contact_title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px 0;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.container-contact_title::after{
+    content: 'get in touch';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px;
+    background: #0d100d;
+    transform: translateX(-50%);
+}
+.container-contact_title::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 350px;
+    left: 50%;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}

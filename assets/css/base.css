@@ -1,34 +1,89 @@
 
-:root{
-
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
 *{
     box-sizing: border-box;
 }
 
-html{
-
-}
-
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Anton", sans-serif;
 }
 .btn{
-    padding: 10px 20px;
-    font-size: 24px;
-    border-radius: 10px;
-    width: 250px;
-    color: white;
-    background: rgb(0 0 0 / 80%);
-    border: 1px solid;
-    transition: all 0.3s ease;
+    font-family: "Anton", sans-serif;
+    --speed: 1.25s;
+    container-type: size;
+    width: 30vmin;
+    aspect-ratio: 10 / 3;
+    position: relative;
+    padding: 0;
+    border-radius: 999px;
+    border: 0;
+    overflow: hidden;
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.35) inset,
+      0 -1px 0 0 hsl(0 0% 0% / 0.85);
 }
 .btn:hover{
     background-color: #fff;
     color: #050505;
     border: 1px solid #050505;
     cursor: pointer;
+}
+.btn:after {
+    position: absolute;
+    inset: 2px;
+    border-radius: 999px;
+    background: hsl(0 0% 10%);
+    display: grid;
+    place-items: center;
+    font-family: sans-serif;
+    color: hsl(0 0% 90%);
+    font-size: 4vmin;
+}
+.gradient {
+    position: absolute;
+    width: 100cqh;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    translate: 0 -50%;
+    border-radius: 50%;
+    animation: slide var(--speed) ease-in-out infinite alternate;
+}
+  
+.gradient:after {
+    --spread: 90deg;
+    content: "";
+    position: absolute;
+    inset: -100%;
+    background: conic-gradient(
+        from calc(270deg - (var(--spread) * 0.5)),
+        transparent 0,
+        hsla(0, 2%, 81%, 0.75) var(--spread),
+        transparent var(--spread));
+    animation: rotate calc(var(--speed) * 2) infinite linear;
+}
+  
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+    15%, 35% {
+        rotate: 90deg;
+    }
+    65%, 85% {
+        rotate: 270deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes slide {
+    to {
+    transform: translate(calc(100cqw - 100%), 0);
+    }
 }
 /* Container Product */
 .container-product_title{
